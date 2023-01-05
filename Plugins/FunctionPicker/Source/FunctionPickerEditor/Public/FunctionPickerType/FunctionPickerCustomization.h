@@ -47,6 +47,12 @@ public:
 	 */
 	virtual void CustomizeChildren(TSharedRef<IPropertyHandle> PropertyHandle, IDetailChildrenBuilder& ChildBuilder, IPropertyTypeCustomizationUtils& CustomizationUtils) override;
 
+	/** Creates customization for the Function Picker. */
+	static void RegisterFunctionPickerCustomization();
+
+	/** Removes customization for the Function Picker. */
+	static void UnregisterFunctionPickerCustomization();
+
 protected:
 	/* ---------------------------------------------------
 	*		Protected properties
