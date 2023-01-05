@@ -1,6 +1,6 @@
 // Copyright (c) Yevhenii Selivanov.
 
-#include "FunctionPicker.h"
+#include "FunctionPickerData/FunctionPicker.h"
 
 // Empty settings function
 const FFunctionPicker FFunctionPicker::Empty = FFunctionPicker();
