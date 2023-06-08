@@ -8,7 +8,7 @@ const FFunctionPicker FFunctionPicker::Empty = FFunctionPicker();
 // Custom constructor to set all members values
 FFunctionPicker::FFunctionPicker(UClass* InFunctionClass, FName InFunctionName)
 	: FunctionClass(InFunctionClass)
-	, FunctionName(InFunctionName) {}
+	  , FunctionName(InFunctionName) {}
 
 // Returns the function pointer based on set data to this structure
 UFunction* FFunctionPicker::GetFunction() const
@@ -19,7 +19,7 @@ UFunction* FFunctionPicker::GetFunction() const
 	}
 
 	if (FunctionClass
-	    && !FunctionName.IsNone())
+		&& !FunctionName.IsNone())
 	{
 		UFunction* FoundFunction = FunctionClass->FindFunctionByName(FunctionName, EIncludeSuperFlag::ExcludeSuper);
 		CachedFunctionInternal = FoundFunction;
@@ -27,13 +27,6 @@ UFunction* FFunctionPicker::GetFunction() const
 	}
 
 	return nullptr;
-}
-
-// Compares for equality
-bool FFunctionPicker::operator==(const FFunctionPicker& Other) const
-{
-	return Other.FunctionClass->IsChildOf(this->FunctionClass)
-	       && Other.FunctionName == this->FunctionName;
 }
 
 // Creates a hash value

@@ -53,11 +53,17 @@ struct FUNCTIONPICKER_API FFunctionPicker
 
 	/** Compares for equality.
 	  * @param Other The other object being compared. */
-	bool operator==(const FFunctionPicker& Other) const;
+	FORCEINLINE bool operator==(const FFunctionPicker& Other) const { return GetTypeHash(*this) == GetTypeHash(Other); }
 
 	/** Creates a hash value.
 	  * @param Other the other object to create a hash value for. */
 	friend FUNCTIONPICKER_API uint32 GetTypeHash(const FFunctionPicker& Other);
+
+	/** bool operator */
+	FORCEINLINE operator bool() const { return IsValid(); }
+
+	/** FName operator */
+	FORCEINLINE operator FName() const { return FunctionName; }
 
 protected:
 	/** Contains cached function ptr for performance reasons. */
