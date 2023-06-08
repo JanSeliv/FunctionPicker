@@ -29,6 +29,12 @@ UFunction* FFunctionPicker::GetFunction() const
 	return nullptr;
 }
 
+// Returns string in text format: Class::Function
+FString FFunctionPicker::ToDisplayString() const
+{
+	return IsValid() ? FString::Printf(TEXT("%s::%s"), *FunctionClass->GetName(), *FunctionName.ToString()) : FString();
+}
+
 // Creates a hash value
 uint32 GetTypeHash(const FFunctionPicker& Other)
 {
