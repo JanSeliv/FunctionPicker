@@ -3,7 +3,7 @@
   "Version": 1,
   "VersionName": "1.0",
   "FriendlyName": "Function Picker",
-  "Description": "Plugin allows select the function right in the uproperty.",
+  "Description": "Plugin allows choose a function for a specific property from any blueprint.",
   "Category": "Programming",
   "CreatedBy": "Yevhenii Selivanov",
   "CreatedByURL": "https://github.com/JanSeliv/FunctionPicker",
