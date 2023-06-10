@@ -1,6 +1,8 @@
 // Copyright (c) Yevhenii Selivanov.
 
 #include "FunctionPickerData/FunctionPicker.h"
+//---
+#include UE_INLINE_GENERATED_CPP_BY_NAME(FunctionPicker)
 
 // Empty settings function
 const FFunctionPicker FFunctionPicker::Empty = FFunctionPicker();
