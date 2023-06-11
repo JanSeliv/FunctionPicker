@@ -10,13 +10,13 @@ Detailed documentation about the Function Picker can be found [here](https://doc
 
 ## 🎓 Sample Projects
 
-Check out our [Release](https://github.com/JanSeliv/FunctionPicker/releases) page a sample project showcasing the Function Picker.
+Check out our [Release](https://github.com/JanSeliv/FunctionPicker/releases) page for a sample project showcasing the Function Picker.
 
 Also, explore this [game project repository](https://github.com/JanSeliv/Bomber) to view the Function Picker in action.
 
 ## 📅 Changelog
 #### 2023-06-09
-- 🎉 Initial public release.
+- 🎉 Initial public release on Unreal Engine 5.2
 
 ## 📫 Feedback & Contribution
 
