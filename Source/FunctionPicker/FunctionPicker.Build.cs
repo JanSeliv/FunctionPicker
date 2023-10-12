@@ -8,6 +8,7 @@ public class FunctionPicker : ModuleRules
 	{
 		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
 		CppStandard = CppStandardVersion.Latest;
+		bEnableNonInlinedGenCppWarnings = true;
 
 		PublicDependencyModuleNames.AddRange(new[]
 			{

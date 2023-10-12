@@ -2,6 +2,10 @@
 
 #include "FunctionPickerData/FunctionPicker.h"
 //---
+#if WITH_EDITOR
+#include "Misc/DataValidation.h" // IsDataValid func
+#endif
+//---
 #include UE_INLINE_GENERATED_CPP_BY_NAME(FunctionPicker)
 
 // Empty settings function
@@ -44,3 +48,38 @@ uint32 GetTypeHash(const FFunctionPicker& Other)
 	const uint32 FunctionNameHash = GetTypeHash(Other.FunctionName);
 	return HashCombine(FunctionClassHash, FunctionNameHash);
 }
+
+#if WITH_EDITOR
+// Validates chosen data
+EDataValidationResult FFunctionPicker::IsDataValid(FDataValidationContext& Context) const
+{
+	if (!FunctionClass)
+	{
+		Context.AddError(FText::FromString(TEXT("Function class is not set")));
+
+		// Don't process next
+		return EDataValidationResult::Invalid;
+	}
+
+	if (FunctionName.IsNone())
+	{
+		static const FText ErrorText = FText::FromString(TEXT("Function name is not set while the class '{0}' is chosen!"));
+		Context.AddError(FText::Format(ErrorText, FText::FromString(FunctionClass->GetName())));
+
+		// Don't process next
+		return EDataValidationResult::Invalid;
+	}
+
+	// Check UFunction is set
+	if (!GetFunction())
+	{
+		static const FText ErrorText = FText::FromString(TEXT("Function '{0}' does not exist in the class '{1}'!"));
+		Context.AddError(FText::Format(ErrorText, FText::FromName(FunctionName), FText::FromString(FunctionClass->GetName())));
+
+		// Don't process next
+		return EDataValidationResult::Invalid;
+	}
+
+	return EDataValidationResult::Valid;
+}
+#endif // WITH_EDITOR
