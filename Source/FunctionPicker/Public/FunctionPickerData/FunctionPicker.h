@@ -38,7 +38,7 @@ struct FUNCTIONPICKER_API FFunctionPicker
 	FFunctionPicker(UClass* InFunctionClass, FName InFunctionName);
 
 	/** The class where function can be found. */
-	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "Class", ShowOnlyInnerProperties))
+	UPROPERTY(EditDefaultsOnly, BlueprintReadOnly, meta = (DisplayName = "Class", AllowAbstract, ShowOnlyInnerProperties))
 	TObjectPtr<UClass> FunctionClass = nullptr;
 
 	/** The function name to choose for specified class.*/
@@ -67,6 +67,13 @@ struct FUNCTIONPICKER_API FFunctionPicker
 
 	/** FName operator */
 	FORCEINLINE operator FName() const { return FunctionName; }
+
+#if WITH_EDITOR
+	/** Returns error if function is not valid.
+	 * To make this validation work, override IsDataValid(Context) in any UObject-derived class and call this function.
+	 * See example: https://github.com/JanSeliv/Bomber/commit/a29b933 */
+	EDataValidationResult IsDataValid(class FDataValidationContext& Context) const;
+#endif // WITH_EDITOR
 
 protected:
 	/** Contains cached function ptr for performance reasons. */
