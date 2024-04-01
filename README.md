@@ -15,6 +15,8 @@ Check out our [Release](https://github.com/JanSeliv/FunctionPicker/releases) pag
 Also, explore this [game project repository](https://github.com/JanSeliv/Bomber) to view the Function Picker in action.
 
 ## 📅 Changelog
+#### 
+- Updated to **Unreal Engine 5.4**.
 #### 2023-10-12
 - Updated to **Unreal Engine 5.3**.
 - Added **Data Validation** to verify bound functions and show error: see FFunctionPicker::IsDataValid description.
