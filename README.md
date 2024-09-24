@@ -1,12 +1,28 @@
-# ƒ Function Picker
+<a href="https://github.com/JanSeliv/FunctionPicker/blob/main/LICENSE">![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)</a>
+<a href="https://www.unrealengine.com/">![Unreal Engine](https://img.shields.io/badge/Unreal-5.3-dea309?style=flat&logo=unrealengine)</a>
+
+<br/>
+<p align="center">
+<a href="https://github.com/JanSeliv/FunctionPicker">
+<img src="https://github.com/JanSeliv/FunctionPicker/blob/main/Resources/Icon128.png?raw=true" alt="Logo" width="80" height="80">
+</a>
+<h3 align="center">ƒ Function Picker</h3>
+<p align="center">
+Select functions from assets or blueprints easily
+<br/>
+<br/>
+<a href="https://discord.gg/jbWgwDefnE"><strong>Join our Discord ››</strong></a>
+<br/>
+<a href="https://github.com/JanSeliv/FunctionPicker/releases">Releases</a>
+·
+<a href="https://docs.google.com/document/d/1OcSFNPq_ZU5jt3nuFPSXep7BEQu5bC2CMEpWwsUJhxY">Docs</a>
+</p>
+
+## 🌟 About
 
 The Function Picker is a user-friendly plugin designed for Unreal Engine 5. It lets you choose a function for a specific property from any available asset or blueprint. You can either call it directly in your code as a callback, or bind the chosen function to a delegate, eliminating the traditional method of hardcoding the binding by referencing the function directly.
 
 ![FunctionPicker](https://github.com/JanSeliv/FunctionPicker/assets/20540872/6371cfb4-7e4e-4f4e-84e6-12eab9adb375)
-
-## 📚 Documentation
-
-Detailed documentation about the Function Picker can be found [here](https://docs.google.com/document/d/1OcSFNPq_ZU5jt3nuFPSXep7BEQu5bC2CMEpWwsUJhxY).
 
 ## 🎓 Sample Projects
 
