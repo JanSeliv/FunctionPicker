@@ -1,5 +1,5 @@
 <a href="https://github.com/JanSeliv/FunctionPicker/blob/main/LICENSE">![License](https://img.shields.io/badge/license-MIT-brightgreen.svg)</a>
-<a href="https://www.unrealengine.com/">![Unreal Engine](https://img.shields.io/badge/Unreal-5.3-dea309?style=flat&logo=unrealengine)</a>
+<a href="https://www.unrealengine.com/">![Unreal Engine](https://img.shields.io/badge/Unreal-5.4-dea309?style=flat&logo=unrealengine)</a>
 
 <br/>
 <p align="center">
@@ -31,7 +31,7 @@ Check out our [Release](https://github.com/JanSeliv/FunctionPicker/releases) pag
 Also, explore this [game project repository](https://github.com/JanSeliv/Bomber) to view the Function Picker in action.
 
 ## 📅 Changelog
-#### 
+#### 2024-12-27
 - Updated to **Unreal Engine 5.4**.
 #### 2023-10-12
 - Updated to **Unreal Engine 5.3**.
@@ -45,7 +45,7 @@ Feedback and contributions from the community are highly appreciated!
 
 If you'd like to contribute, please fork the project and create a pull request targeting the `develop` branch.
 
-If you've found a bug or have an idea for a new feature, please open a new issue on GitHub. Thank you!
+If you've found a bug or have an idea for a new feature, please open a new issue on GitHub or join our [Discord](https://discord.gg/jbWgwDefnE). Thank you!
 
 ## 📜 License
 
