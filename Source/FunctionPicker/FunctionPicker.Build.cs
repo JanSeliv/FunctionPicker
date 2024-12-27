@@ -6,7 +6,7 @@ public class FunctionPicker : ModuleRules
 {
 	public FunctionPicker(ReadOnlyTargetRules Target) : base(Target)
 	{
-		PCHUsage = ModuleRules.PCHUsageMode.UseExplicitOrSharedPCHs;
+		PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 		CppStandard = CppStandardVersion.Latest;
 		bEnableNonInlinedGenCppWarnings = true;
 

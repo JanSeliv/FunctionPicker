@@ -3,8 +3,8 @@
 #include "FunctionPickerEditorModule.h"
 //---
 #include "FunctionPickerType/FunctionPickerCustomization.h"
-
-#define LOCTEXT_NAMESPACE "FFunctionPickerEditorModule"
+//---
+#include "Modules/ModuleManager.h"
 
 // Called right after the module DLL has been loaded and the module object has been created
 void FFunctionPickerEditorModule::StartupModule()
@@ -17,7 +17,5 @@ void FFunctionPickerEditorModule::ShutdownModule()
 {
 	FFunctionPickerCustomization::UnregisterFunctionPickerCustomization();
 }
-
-#undef LOCTEXT_NAMESPACE
 
 IMPLEMENT_MODULE(FFunctionPickerEditorModule, FunctionPickerEditor)
