@@ -8,7 +8,7 @@ public class FunctionPickerEditor : ModuleRules
     {
         PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
         CppStandard = CppStandardVersion.Latest;
-        bEnableNonInlinedGenCppWarnings = true;
+        CppCompileWarningSettings.NonInlinedGenCppWarningLevel = WarningLevel.Error;
         
         PublicDependencyModuleNames.AddRange(
             new[]
